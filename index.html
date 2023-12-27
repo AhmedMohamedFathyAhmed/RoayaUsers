@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <section class="image">
+            <div class="container">
+               
+                <h1 class="text-center text-dark">ROAYA DEVELOPMENT</h1>
+                <h5 class="text-center text-dark">Eng.Ahmed Ashery</h5>
+                
+
+                <div class="form-groub m-2">
+                    <label class="text-dark">اسم العميل</label>
+                    <input  type="text" class="form-control control " id="nameUser">
+                </div>
+                
+                <div class="form-groub m-2">
+                    <label class="text-dark">المساحةالمطلوبة</label>
+                    <input type="number" class="form-control control"id="area-req">
+                </div>
+            
+	
+                <div class="form-groub m-2">
+                    <label class="text-dark" >السعر المطلوب</label>
+                    <input type="number" class="form-control control price"id="price-area">
+                </div>
+
+                <div class="form-groub m-2">
+                    <label class="text-dark" >رقم العميل</label>
+                    <input type="number" class="form-control control price"id="phone-user">
+                </div>
+
+                <div class="text-center">
+                <button class="btn btn-add m-4 mt-5" id="btn">Save Data</button>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="d-flex justify-content-center">
+                <input type="text" placeholder="Search by User Name " class="form-control m-4 w-50 " id="search" onkeyup="search(this.value)">
+              
+                <input type="text" placeholder="Search by price" class="form-control m-4 w-50 " id="searchTwo" onkeyup="searchTwo(this.value)">
+            </div>
+
+                <table class="table-bordered text-center w-75 text-white m-auto mt-5 ">
+                    <thead>
+                        
+                        <th>اسم العميل</th>
+                        <th>المساحةالمطلوبة</th>
+                        <th>السعر المطلوب</th>
+                        <th>رقم العميل</th>
+                        <th>Delete User</th>
+                        <th>Update User</th>
+
+                    </thead>
+
+                    <tbody id="tbody">
+                        
+
+                    </tbody>
+                </table>
+                
+                <div class="m-5 text-dark">.</div>
+
+            </div>
+
+           
+        </section>
+
+
+
+
+
+ 
+
+        <script src="./main.js"></script>
+    </body>
+</html>
